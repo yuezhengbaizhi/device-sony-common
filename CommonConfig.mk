@@ -49,6 +49,9 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_USES_MKE2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+# Use mke2fs to create f2fs images
+TARGET_USERIMAGES_USE_F2FS := true
+
 BOARD_ROOT_EXTRA_FOLDERS := odm
 BOARD_ROOT_EXTRA_SYMLINKS += /$(TARGET_COPY_OUT_VENDOR)/firmware_mnt:/firmware
 BOARD_ROOT_EXTRA_SYMLINKS += /$(TARGET_COPY_OUT_VENDOR)/bt_firmware:/bt_firmware
